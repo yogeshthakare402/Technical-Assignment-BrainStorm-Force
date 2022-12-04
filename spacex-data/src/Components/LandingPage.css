@@ -1,0 +1,213 @@
+#spacex{
+    width: 60%;
+    height: fit-content;
+    border: 5px solid blueviolet;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/space.png");
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    position: relative;
+}
+#heading{
+    color: rgb(0, 123, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    text-shadow: 5px 5px rgb(40, 40, 235);
+}
+#tagline{
+    color: rgb(203, 70, 70);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    text-shadow: 2px 2px rgb(235, 40, 203);
+}
+#search{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/aurora.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+#rocketSearch{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#searchHeading{
+    margin-right: 30px;
+    color: aqua;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.rocketSearch{
+    margin: 5px 5px 5px 5px;
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+}
+.rocketSearchbtn{
+    margin: 5px 5px 5px 5px;
+    width: 42%;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.fetchedData{
+    margin: 10px 50px 10px 50px;
+    width: 40%;
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: rgba(112, 239, 239, 0.318);
+}
+#rocketData{
+    width: 99.4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 4px solid violet;
+    border-top: none;
+    border-bottom: none;
+}
+.rocketImage{
+    width: 100%;
+    border-radius:0 0 10px 10px;
+}
+.details{
+    margin:10px 0px 5px 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.fetchedImage{
+    width: 400px;
+}
+
+.pagination{
+    width: 100%;
+    color: black;
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pageItems{
+    align-self: center;
+    margin-left: 10px;
+    color: black;
+    font-size: larger;
+    list-style: none;
+    border: 2px solid violet;
+}
+
+/* Popup css */
+
+/* Popup container */
+.popup {
+    height: 400px;
+    width: 50%;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 0px 50px 0px 50px;
+    background-image: url("../images/aurora.jpg");
+    box-shadow: 5px 5px 5px 5px rgba(238, 130, 238, 0.348);
+    
+  }
+  .popuptext{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: circle;
+    color: white;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .cancel{
+    color: red;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
+  .description{
+    text-align: left;
+  }
+
+  @media screen and (min-width:350px) and (max-width:830px) {
+    #spacex{
+        width: 100%;
+    }
+    #rocketSearch{
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .rocketSearch{
+        margin: 5px 1px 5px 1px;
+        width: 80%;
+        height: 35px;
+        border-radius: 10px;
+    }
+
+    .fetchedData{
+        margin: 10px;
+        width: 100%;
+    }
+    #rocketData{
+        width: 100%;
+    }
+    #heading{
+        font-size: 80px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        text-shadow: 5px 5px rgb(40, 40, 235);
+    }
+
+    .popup {
+        padding-bottom: 10px;
+        height: fit-content;
+        width: 90%;
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        
+      }
+      .popuptext{
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style-type: circle;
+        color: white;
+      }
+    
+    
+  }
